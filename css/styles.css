@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+body {
+  align-items: center;
+  background: url("../img/confetti-stars.jpg");
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Cabin", sans-serif;
+  font-size: 17px;
+  height: 100vh;
+  justify-content: center;
+  line-height: 1.4;
+  padding: 3em 0;
+}
+
+.container {
+  align-items: center;
+  background-color: #fc8a55;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-height: 700px;
+  max-width: 800px;
+  padding: 0 1em;
+  width: 90%;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 1em 0 2em;
+  text-align: center;
+  width: 100%;
+}
+
+.selections {
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 700px;
+  width: 100%;
+}
+
+.subscription-select,
+.duration-select {
+  text-align: center;
+  width: 80%;
+}
+
+select#subscription,
+select#months {
+  color: #5e450a;
+  padding: 0.75em;
+}
+
+.subscription-select > *,
+.duration-select > * {
+  margin: 1em 0;
+  width: 100%;
+}
+
+.congrats {
+  border: 3px solid whitesmoke;
+  font-size: 1.2em;
+  margin: 2em 0;
+  padding: 1.5em 0;
+  text-align: center;
+  width: 80%;
+}
+
+.congrats h3 {
+  display: block;
+}
+
+footer {
+  color: whitesmoke;
+  font-size: 0.875em;
+  padding-top: 6em;
+  text-align: center;
+  width: 100%;
+}
+footer a {
+  color: whitesmoke;
+}
+
+@media screen and (min-width: 760px) {
+  .subscription-select,
+  .duration-select {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .selections {
+    justify-content: space-around;
+  }
+
+  .congrats {
+    font-size: 1.4em;
+  }
+
+  .congrats h3 {
+    font-size: 1.2em;
+  }
+}
